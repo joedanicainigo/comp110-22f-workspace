@@ -30,12 +30,12 @@ if instances_of_letter == 0:
     print("No instances of " + letter_guess + " found in " + final_word)
 else: 
     if instances_of_letter == 1:
-        print ("1 instance of " + letter_guess + " found in " + final_word)
+        print("1 instance of " + letter_guess + " found in " + final_word)
     if instances_of_letter == 2: 
-        print ("2 instances of " + letter_guess + " found in " + final_word)
+        print("2 instances of " + letter_guess + " found in " + final_word)
     if instances_of_letter == 3: 
-        print ("3 instances of " + letter_guess + " found in " + final_word)
+        print("3 instances of " + letter_guess + " found in " + final_word)
     if instances_of_letter == 4: 
-        print ("4 instances of " + letter_guess + " found in " + final_word)
+        print("4 instances of " + letter_guess + " found in " + final_word)
     if instances_of_letter == 5: 
-        print ("5 instances of " + letter_guess + " found in " + final_word)
+        print("5 instances of " + letter_guess + " found in " + final_word)
