@@ -5,7 +5,7 @@ secret_word: str = "python"
 guess: str = input(f"What is your {len(secret_word)}-letter guess? ")
 """Test to see whether guess has the same # of letters as secret word; if not ask for new guess."""
 while len(guess) != len(secret_word):
-    guess: str = input(f"That was not {len(secret_word)} letters! Try again: ")
+    guess = input(f"That was not {len(secret_word)} letters! Try again: ")
 i: int = 0
 box_emojis: str = ""
 WHITE_BOX: str = "\U00002B1C"
@@ -20,12 +20,12 @@ while i < len(secret_word):
     else:
         guess_existence: bool = False
         alternate_i: int = 0
-        while guess_existence != True and alternate_i < len(secret_word):
+        while guess_existence is not True and alternate_i < len(secret_word):
             if guess[i] == secret_word[alternate_i]:
                 guess_existence = True
             else:
                 alternate_i += 1
-        if guess_existence == True:
+        if guess_existence is True:
             box_emojis += YELLOW_BOX
         else:
             box_emojis += WHITE_BOX
