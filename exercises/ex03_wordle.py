@@ -63,3 +63,6 @@ def main() -> None:
             else:
                 print(f"X/6 - Sorry, try again tomorrow!")
                 exit()
+
+if __name__ == "__main__":
+    main()
